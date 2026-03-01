@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  training-app:
+    build: .
+    container_name: santander_xgboost
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+    # This allows the container to use all available CPU cores on your EC2 instance
+    deploy:
+      resources:
+        reservations:
+          cpus: '0.000' # Unlimited
