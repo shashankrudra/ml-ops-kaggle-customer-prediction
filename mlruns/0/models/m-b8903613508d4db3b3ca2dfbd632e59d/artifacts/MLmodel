@@ -1,0 +1,23 @@
+artifact_path: /Users/shashank/Documents/ideaSpace/ml-ops-kaggle-customer-prediction/mlruns/0/models/m-b8903613508d4db3b3ca2dfbd632e59d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.10.0
+model_id: m-b8903613508d4db3b3ca2dfbd632e59d
+model_size_bytes: 636270
+model_uuid: m-b8903613508d4db3b3ca2dfbd632e59d
+prompts: null
+run_id: 01fd6c8178fc4a3e84a74118b2ff76ec
+utc_time_created: '2026-03-01 21:26:58.320010'

@@ -9,7 +9,7 @@ import mlflow
 import mlflow.sklearn
 
 def main():
-    train, test = load_data("data/santander_train.csv", "data/santander_test.csv")
+    train, test = load_data()
     X, y, X_test = prepare_data(train, test)
     X_train, X_val, y_train, y_val = split_data(X, y)
     X_train_clean = remove_id(X_train)
